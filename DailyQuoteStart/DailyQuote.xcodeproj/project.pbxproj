@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE0C0662291BC31200EE1029 /* DailyQuoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0661291BC31200EE1029 /* DailyQuoteApp.swift */; };
+		FE0C0664291BC31200EE1029 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0663291BC31200EE1029 /* ContentView.swift */; };
+		FE0C0666291BC31400EE1029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0C0665291BC31400EE1029 /* Assets.xcassets */; };
+		FE0C0669291BC31400EE1029 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0C0668291BC31400EE1029 /* Preview Assets.xcassets */; };
+		FE0C0670291BC3BB00EE1029 /* Quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = FE0C066F291BC3BB00EE1029 /* Quotes.json */; };
+		FE0C0672291BC42200EE1029 /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0671291BC42200EE1029 /* QuoteManager.swift */; };
+		FE0C0674291BC45C00EE1029 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0673291BC45C00EE1029 /* QuoteModel.swift */; };
+		FE0C0676291BC67700EE1029 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0675291BC67700EE1029 /* QuoteViewModel.swift */; };
+		FE0C0678291BC83900EE1029 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0677291BC83900EE1029 /* QuoteView.swift */; };
+		FE0C0680291BCB9500EE1029 /* DailyQuoteWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C067F291BCB9500EE1029 /* DailyQuoteWatchApp.swift */; };
+		FE0C0682291BCB9500EE1029 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0681291BCB9500EE1029 /* ContentView.swift */; };
+		FE0C0684291BCB9700EE1029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0C0683291BCB9700EE1029 /* Assets.xcassets */; };
+		FE0C0687291BCB9700EE1029 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0C0686291BCB9700EE1029 /* Preview Assets.xcassets */; };
+		FE0C068A291BCB9700EE1029 /* DailyQuoteWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FE0C067D291BCB9500EE1029 /* DailyQuoteWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE0C068F291BCBF500EE1029 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0675291BC67700EE1029 /* QuoteViewModel.swift */; };
+		FE0C0690291BCBFB00EE1029 /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0671291BC42200EE1029 /* QuoteManager.swift */; };
+		FE0C0691291BCC0300EE1029 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0673291BC45C00EE1029 /* QuoteModel.swift */; };
+		FE0C0692291BCC8100EE1029 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0C0677291BC83900EE1029 /* QuoteView.swift */; };
+		FE0C0693291BCD2600EE1029 /* Quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = FE0C066F291BC3BB00EE1029 /* Quotes.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE0C0688291BCB9700EE1029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0C0656291BC31200EE1029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0C067C291BCB9500EE1029;
+			remoteInfo = "DailyQuoteWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE0C068E291BCB9700EE1029 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FE0C068A291BCB9700EE1029 /* DailyQuoteWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FE0C065E291BC31200EE1029 /* DailyQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0C0661291BC31200EE1029 /* DailyQuoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuoteApp.swift; sourceTree = "<group>"; };
+		FE0C0663291BC31200EE1029 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE0C0665291BC31400EE1029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE0C0668291BC31400EE1029 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE0C066F291BC3BB00EE1029 /* Quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quotes.json; sourceTree = "<group>"; };
+		FE0C0671291BC42200EE1029 /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
+		FE0C0673291BC45C00EE1029 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		FE0C0675291BC67700EE1029 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		FE0C0677291BC83900EE1029 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		FE0C067D291BCB9500EE1029 /* DailyQuoteWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DailyQuoteWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0C067F291BCB9500EE1029 /* DailyQuoteWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuoteWatchApp.swift; sourceTree = "<group>"; };
+		FE0C0681291BCB9500EE1029 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE0C0683291BCB9700EE1029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE0C0686291BCB9700EE1029 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE0C065B291BC31200EE1029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0C067A291BCB9500EE1029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE0C0655291BC31200EE1029 = {
+			isa = PBXGroup;
+			children = (
+				FE0C0660291BC31200EE1029 /* DailyQuote */,
+				FE0C067E291BCB9500EE1029 /* DailyQuoteWatch Watch App */,
+				FE0C065F291BC31200EE1029 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE0C065F291BC31200EE1029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C065E291BC31200EE1029 /* DailyQuote.app */,
+				FE0C067D291BCB9500EE1029 /* DailyQuoteWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE0C0660291BC31200EE1029 /* DailyQuote */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C0661291BC31200EE1029 /* DailyQuoteApp.swift */,
+				FE0C0663291BC31200EE1029 /* ContentView.swift */,
+				FE0C0671291BC42200EE1029 /* QuoteManager.swift */,
+				FE0C0673291BC45C00EE1029 /* QuoteModel.swift */,
+				FE0C0675291BC67700EE1029 /* QuoteViewModel.swift */,
+				FE0C0677291BC83900EE1029 /* QuoteView.swift */,
+				FE0C0665291BC31400EE1029 /* Assets.xcassets */,
+				FE0C066F291BC3BB00EE1029 /* Quotes.json */,
+				FE0C0667291BC31400EE1029 /* Preview Content */,
+			);
+			path = DailyQuote;
+			sourceTree = "<group>";
+		};
+		FE0C0667291BC31400EE1029 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C0668291BC31400EE1029 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE0C067E291BCB9500EE1029 /* DailyQuoteWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C067F291BCB9500EE1029 /* DailyQuoteWatchApp.swift */,
+				FE0C0681291BCB9500EE1029 /* ContentView.swift */,
+				FE0C0683291BCB9700EE1029 /* Assets.xcassets */,
+				FE0C0685291BCB9700EE1029 /* Preview Content */,
+			);
+			path = "DailyQuoteWatch Watch App";
+			sourceTree = "<group>";
+		};
+		FE0C0685291BCB9700EE1029 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FE0C0686291BCB9700EE1029 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE0C065D291BC31200EE1029 /* DailyQuote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0C066C291BC31400EE1029 /* Build configuration list for PBXNativeTarget "DailyQuote" */;
+			buildPhases = (
+				FE0C065A291BC31200EE1029 /* Sources */,
+				FE0C065B291BC31200EE1029 /* Frameworks */,
+				FE0C065C291BC31200EE1029 /* Resources */,
+				FE0C068E291BCB9700EE1029 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0C0689291BCB9700EE1029 /* PBXTargetDependency */,
+			);
+			name = DailyQuote;
+			productName = DailyQuote;
+			productReference = FE0C065E291BC31200EE1029 /* DailyQuote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE0C067C291BCB9500EE1029 /* DailyQuoteWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0C068B291BCB9700EE1029 /* Build configuration list for PBXNativeTarget "DailyQuoteWatch Watch App" */;
+			buildPhases = (
+				FE0C0679291BCB9500EE1029 /* Sources */,
+				FE0C067A291BCB9500EE1029 /* Frameworks */,
+				FE0C067B291BCB9500EE1029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DailyQuoteWatch Watch App";
+			productName = "DailyQuoteWatch Watch App";
+			productReference = FE0C067D291BCB9500EE1029 /* DailyQuoteWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE0C0656291BC31200EE1029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FE0C065D291BC31200EE1029 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					FE0C067C291BCB9500EE1029 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = FE0C0659291BC31200EE1029 /* Build configuration list for PBXProject "DailyQuote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE0C0655291BC31200EE1029;
+			productRefGroup = FE0C065F291BC31200EE1029 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE0C065D291BC31200EE1029 /* DailyQuote */,
+				FE0C067C291BCB9500EE1029 /* DailyQuoteWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE0C065C291BC31200EE1029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0C0669291BC31400EE1029 /* Preview Assets.xcassets in Resources */,
+				FE0C0670291BC3BB00EE1029 /* Quotes.json in Resources */,
+				FE0C0666291BC31400EE1029 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0C067B291BCB9500EE1029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0C0687291BCB9700EE1029 /* Preview Assets.xcassets in Resources */,
+				FE0C0693291BCD2600EE1029 /* Quotes.json in Resources */,
+				FE0C0684291BCB9700EE1029 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE0C065A291BC31200EE1029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0C0664291BC31200EE1029 /* ContentView.swift in Sources */,
+				FE0C0678291BC83900EE1029 /* QuoteView.swift in Sources */,
+				FE0C0676291BC67700EE1029 /* QuoteViewModel.swift in Sources */,
+				FE0C0662291BC31200EE1029 /* DailyQuoteApp.swift in Sources */,
+				FE0C0674291BC45C00EE1029 /* QuoteModel.swift in Sources */,
+				FE0C0672291BC42200EE1029 /* QuoteManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0C0679291BCB9500EE1029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0C0691291BCC0300EE1029 /* QuoteModel.swift in Sources */,
+				FE0C0692291BCC8100EE1029 /* QuoteView.swift in Sources */,
+				FE0C068F291BCBF500EE1029 /* QuoteViewModel.swift in Sources */,
+				FE0C0682291BCB9500EE1029 /* ContentView.swift in Sources */,
+				FE0C0690291BCBFB00EE1029 /* QuoteManager.swift in Sources */,
+				FE0C0680291BCB9500EE1029 /* DailyQuoteWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE0C0689291BCB9700EE1029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE0C067C291BCB9500EE1029 /* DailyQuoteWatch Watch App */;
+			targetProxy = FE0C0688291BCB9700EE1029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FE0C066A291BC31400EE1029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE0C066B291BC31400EE1029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE0C066D291BC31400EE1029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyQuote/Preview Content\"";
+				DEVELOPMENT_TEAM = JEW4ZQXUL9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.bartis.DailyQuote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE0C066E291BC31400EE1029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyQuote/Preview Content\"";
+				DEVELOPMENT_TEAM = JEW4ZQXUL9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.bartis.DailyQuote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE0C068C291BCB9700EE1029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyQuoteWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = JEW4ZQXUL9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyQuoteWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ro.bartis.DailyQuote;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.bartis.DailyQuote.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		FE0C068D291BCB9700EE1029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyQuoteWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = JEW4ZQXUL9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyQuoteWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ro.bartis.DailyQuote;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.bartis.DailyQuote.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE0C0659291BC31200EE1029 /* Build configuration list for PBXProject "DailyQuote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0C066A291BC31400EE1029 /* Debug */,
+				FE0C066B291BC31400EE1029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0C066C291BC31400EE1029 /* Build configuration list for PBXNativeTarget "DailyQuote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0C066D291BC31400EE1029 /* Debug */,
+				FE0C066E291BC31400EE1029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0C068B291BCB9700EE1029 /* Build configuration list for PBXNativeTarget "DailyQuoteWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0C068C291BCB9700EE1029 /* Debug */,
+				FE0C068D291BCB9700EE1029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE0C0656291BC31200EE1029 /* Project object */;
+}
